@@ -1,0 +1,249 @@
+<DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>A.S.C.R. Officiel | Excellence - Discipline - Victoire</title>
+    <style>
+        :root { 
+            --bordeaux: #4a0404; 
+            --or: #d4af37; 
+            --noir: #111; 
+            --blanc: #fff; 
+            --fb: #1877F2; 
+            --wa: #25D366;
+        }
+
+        body { 
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; 
+            margin: 0; 
+            background: #fdfdfd; 
+            color: #333; 
+        }
+
+        header { 
+            background: var(--bordeaux); 
+            color: var(--or); 
+            text-align: center; 
+            padding: 40px 20px; 
+            border-bottom: 6px solid var(--or); 
+        }
+
+        .logo-main { 
+            width: 130px; 
+            height: 130px; 
+            border-radius: 50%; 
+            border: 4px solid var(--or); 
+            background: white; 
+            padding: 5px;
+            box-shadow: 0 4px 15px rgba(0,0,0,0.3);
+            object-fit: contain;
+        }
+
+        h1 { margin: 15px 0 5px; font-size: 1.8rem; letter-spacing: 1px; }
+        header p { margin: 0; font-weight: 300; text-transform: uppercase; letter-spacing: 2px; font-size: 0.9rem; }
+
+        .section-title { 
+            background: var(--bordeaux); 
+            color: var(--or); 
+            padding: 15px; 
+            text-align: center; 
+            text-transform: uppercase; 
+            font-weight: bold; 
+            margin-top: 40px; 
+            border-left: 12px solid var(--or); 
+        }
+
+        .container { padding: 15px; max-width: 900px; margin: auto; }
+
+        .hero-img { 
+            width: 100%; 
+            border-radius: 12px; 
+            border: 2px solid var(--or); 
+            box-shadow: 0 5px 20px rgba(0,0,0,0.15);
+            margin-bottom: 10px;
+        }
+
+        .presi-box { text-align: center; background: white; padding: 20px; border-radius: 15px; border: 1px solid #eee; }
+        .presi-name { color: var(--bordeaux); margin: 10px 0 0; font-size: 1.5rem; }
+
+        .grid { 
+            display: grid; 
+            grid-template-columns: repeat(2, 1fr); 
+            gap: 15px; 
+            padding: 10px 0; 
+        }
+
+        .player-card { 
+            background: white; 
+            border-radius: 12px; 
+            overflow: hidden; 
+            box-shadow: 0 4px 10px rgba(0,0,0,0.08); 
+            border-bottom: 5px solid var(--or); 
+            position: relative;
+        }
+
+        .player-card img { width: 100%; height: 180px; object-fit: cover; }
+
+        .player-info { 
+            padding: 12px; 
+            text-align: center; 
+            font-weight: bold; 
+            color: var(--bordeaux); 
+            font-size: 0.9rem;
+            text-transform: uppercase;
+        }
+
+        .intl-tag {
+            position: absolute;
+            top: 10px;
+            right: 10px;
+            background: var(--or);
+            color: var(--bordeaux);
+            font-size: 0.65rem;
+            padding: 4px 8px;
+            border-radius: 5px;
+            font-weight: 900;
+        }
+
+        .form-container { 
+            background: white; padding: 30px; border-radius: 15px; box-shadow: 0 10px 30px rgba(0,0,0,0.1); 
+            border: 1px solid var(--or); margin-top: 20px;
+        }
+
+        .input-group { margin-bottom: 20px; }
+        .input-group label { display: block; font-weight: bold; margin-bottom: 8px; color: var(--bordeaux); }
+        .input-group input, .input-group select { 
+            width: 100%; padding: 14px; border: 1px solid #ddd; border-radius: 8px; font-size: 1rem; box-sizing: border-box; 
+        }
+
+        .btn-submit { 
+            width: 100%; background: var(--bordeaux); color: var(--or); border: none; padding: 18px; 
+            font-weight: bold; border-radius: 8px; cursor: pointer; text-transform: uppercase; font-size: 1.1rem;
+        }
+
+        .contact-section { text-align: center; padding: 30px 0; }
+        .btn-social { 
+            display: flex; align-items: center; justify-content: center; width: 100%; max-width: 320px; 
+            margin: 15px auto; padding: 16px; border-radius: 50px; text-decoration: none; font-weight: bold; color: white; 
+        }
+        .btn-wa { background: var(--wa); }
+        .btn-fb { background: var(--fb); }
+
+        /* STYLE PARTENAIRE YOBOCCO */
+        .partner-section {
+            text-align: center;
+            padding: 40px 20px;
+            background: #fff;
+            margin-top: 30px;
+            border-top: 1px solid #eee;
+        }
+        .yobocco-text {
+            font-size: 2.8rem;
+            font-weight: 900;
+            color: #0044cc;
+            letter-spacing: 8px;
+            margin: 10px 0;
+            font-family: 'Arial Black', sans-serif;
+        }
+
+        footer { 
+            background: var(--noir); color: var(--blanc); text-align: center; padding: 50px 20px; margin-top: 50px; 
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    <img src="https://i.ibb.co/hxCwtzZb/1001676909-a04c803402773d530a74f4e6388bae20-29-01-2026-22-49-56-20260306-093616-0000.webp" class="logo-main" alt="A.S.C.R. Logo">
+    <h1>A.S. CLUB DES RENAISSANCES</h1>
+    <p>Excellence - Discipline - Victoire</p>
+</header>
+
+<div class="container">
+    <div class="section-title">Calendrier & Prochain Match</div>
+    <div style="margin-top:20px;">
+        <img src="https://i.ibb.co/93NVnsPG/Black-and-Gray-Bold-Sporty-Match-Day-Instagram-Post-20260308-125049-0000.png" class="hero-img">
+    </div>
+
+    <div class="section-title">Le Président Fondateur</div>
+    <div class="presi-box">
+        <img src="https://i.ibb.co/r2ty3twZ/IMG-1662.jpg" class="hero-img" style="max-width: 450px;">
+        <h2 class="presi-name">MOT DU PRÉSIDENT</h2>
+        <p>"Former les champions de demain dans le respect et l'excellence."</p>
+    </div>
+
+    <div class="section-title">Equipements Officiels 2026</div>
+    <div style="margin-top:20px;">
+        <img src="https://i.ibb.co/yc7Y16bv/file-00000000987871fba2696236baf8393f.png" class="hero-img">
+    </div>
+
+    <div class="section-title">Effectif Elite U17</div>
+    <div class="grid">
+        <div class="player-card">
+            <span class="intl-tag">INTERNATIONAL</span>
+            <img src="https://i.ibb.co/KxxK81mw/IMG-1632.jpg">
+            <div class="player-info">Adjobi Axel</div>
+        </div>
+        <div class="player-card"><img src="https://i.ibb.co/1YXXMzD9/IMG-1875.jpg"><div class="player-info">Adams</div></div>
+        <div class="player-card"><img src="https://i.ibb.co/r2LxvwWd/diawara.jpg"><div class="player-info">Diawara M.</div></div>
+        <div class="player-card"><img src="https://i.ibb.co/TMLFSbCK/IMG-1656.jpg"><div class="player-info">Aziz</div></div>
+        <div class="player-card"><img src="https://i.ibb.co/Hww76B8/IMG-1623.jpg"><div class="player-info">Amza</div></div>
+        <div class="player-card"><img src="https://i.ibb.co/dsm00tW6/IMG-1696.jpg"><div class="player-info">K. Junior (GK)</div></div>
+    </div>
+
+    <div class="section-title">Académie U9 & U5</div>
+    <img src="https://i.ibb.co/XZbZk98F/IMG-1591.jpg" class="hero-img" style="margin-top:20px;">
+    <div class="grid">
+        <div class="player-card"><img src="https://i.ibb.co/Z6YsJwT8/IMG-1587.jpg"><div class="player-info">k.peniel</div></div>
+        <div class="player-card"><img src="https://i.ibb.co/whC31Zyc/IMG-1520.jpg"><div class="player-info">tuo emmanuel</div></div>
+        <div class="player-card"><img src="https://i.ibb.co/93YHsWBY/IMG-1542.jpg"><div class="player-info">meite laso</div></div>
+        <div class="player-card"><img src="https://i.ibb.co/YTwZFsPT/IMG-1582.jpg"><div class="player-info">Amadou (U5)</div></div>
+    </div>
+
+    <div class="section-title">Rejoindre le Club</div>
+    <div class="form-container">
+        <form action="https://formspree.io/f/associationsportiveclubdesrena@gmail.com" method="POST">
+            <div class="input-group">
+                <label>Nom Complet du Joueur</label>
+                <input type="text" name="nom" required>
+            </div>
+            <div class="input-group">
+                <label>Date de Naissance</label>
+                <input type="date" name="naissance" required>
+            </div>
+            <div class="input-group">
+                <label>Catégorie</label>
+                <select name="categorie">
+                    <option>Académie U5</option>
+                    <option>Académie U9</option>
+                    <option>Section U12</option>
+                    <option>Elite U17</option>
+                </select>
+            </div>
+            <div class="input-group">
+                <label>Téléphone Parent</label>
+                <input type="tel" name="telephone" required>
+            </div>
+            <button type="submit" class="btn-submit">Envoyer l'inscription</button>
+        </form>
+    </div>
+
+    <div class="contact-section">
+        <a href="https://wa.me/2250502840032" class="btn-social btn-wa">WHATSAPP OFFICIEL</a>
+        <a href="https://www.facebook.com/share/19VR2bbXQn/" target="_blank" class="btn-social btn-fb">PAGE FACEBOOK</a>
+        <p>📧 associationsportiveclubdesrena@gmail.com</p>
+    </div>
+</div>
+
+<div class="partner-section">
+    <p style="text-transform: uppercase; font-weight: bold; color: #777; font-size: 0.8rem; margin: 0;">Partenaire Officiel</p>
+    <div class="yobocco-text">YOBOCCO</div>
+</div>
+
+<footer>
+    <p>&copy; 2026 A.S. CLUB DES RENAISSANCES <br> Abidjan, Côte d'Ivoire</p>
+</footer>
+
+</body>
+</html>
